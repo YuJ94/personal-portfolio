@@ -1,7 +1,7 @@
-// HEADER VARIABLES
-const header = document.querySelector("header");
+// NAVIGATION VARIABLES
+const navigation = document.querySelector(".navigation");
 
-// HEADER FUNCTIONS
+// NAVIGATION FUNCTIONS
 window.addEventListener("scroll", function() {
-    header.classList.toggle("sticky", window.scrollY > 0);
+    navigation.classList.toggle("sticky", window.scrollY > 0);
 });
