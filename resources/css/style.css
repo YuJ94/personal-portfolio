@@ -300,7 +300,7 @@ a {
 
 .technologies {
     display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 200px));
+    grid-template-columns: repeat(2, minmax(144px, 208px));
     margin-top: 1rem;
     overflow: hidden;
     list-style: none;
@@ -319,4 +319,48 @@ a {
 
 .about-right .btn {
     margin-top: 1.5rem;
+}
+
+/* PROJECTS */
+
+.projects {
+    padding: 4rem 15%;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 4rem 15%;
+    text-align: center;
+}
+
+.contact .btn {
+    margin: 2rem 0;
+}
+
+.contact .icons {
+    justify-content: center;
+    line-height: 0;
+}
+
+.contact .icons a {
+    margin: 0 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: underline;
+    transition: color 1s;
 }
