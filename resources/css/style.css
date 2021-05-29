@@ -9,14 +9,15 @@
 }
 
 :root {
-    --primary-color: #ff8c69;
+    /* --primary-color: #ff8c69; */
+    --primary-color: #00afef;
     --background-color: #282C34;
     --text-color: #fff;
 }
 
 .light-theme {
     --background-color: #fff;
-    --text-color: #282C34;
+    --text-color: #282C34;   
 }
 
 html {
@@ -124,7 +125,7 @@ a {
 .toggle-btn {
     font-size: 1.5rem;
     cursor: pointer;
-    transition: color .5s;
+    transition: color 0.5s;
 }
 
 .toggle-btn:hover {
@@ -168,18 +169,18 @@ a {
 
 .home-animate-1 {
     opacity: 0;
-    animation: fadeUp .5s forwards;
+    animation: fadeUp 0.5s forwards;
 }
 
 .home-animate-2 {
     opacity: 0;
-    animation: fadeUp .5s forwards;
-    animation-delay: .5s;
+    animation: fadeUp 0.5s forwards;
+    animation-delay: 0.5s;
 }
 
 .home-animate-3 {
     opacity: 0;
-    animation: fadeUp .5s forwards;
+    animation: fadeUp 0.5s forwards;
     animation-delay: 1s;
 }
 
@@ -272,8 +273,7 @@ a {
 
 /* ABOUT */
 
-.about .container {
-    width: 100%;
+.about-container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -312,11 +312,11 @@ a {
 
 .technologies li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 
 .technologies li::before {
-    content: "▹";
+    content: ">";
     position: absolute;
     left: 0px;
     color: var(--primary-color);
@@ -325,7 +325,6 @@ a {
 /* FEATURED PROJECTS */
 
 .project-container {
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -350,9 +349,15 @@ a {
 .project-left-img img {
     width: 100%;
     display: block;
+    transition: transform 0.5s;
 }
 
-.project-right-text p {
+.project-left-img img:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+.project-description {
     margin: 1rem 0;
 }
 
@@ -406,10 +411,6 @@ a {
     overflow: hidden;
 }
 
-.project-left-text p {
-    margin: 1rem 0;
-}
-
 .project-left-links {
     display: flex;
     justify-content: flex-start;
@@ -423,6 +424,32 @@ a {
 .project-right-img img {
     width: 100%;
     display: block;
+    transition: transform 0.5s;
+}
+
+.project-right-img img:hover {
+    transform: scale(1.025);
+    cursor: pointer;
+}
+
+/* ADDITIONAL PROJECTS */
+
+.additional-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(432px, 1fr));
+    grid-gap: 2rem;
+}
+
+.project-box {
+    background-color: rgba(0, 0, 0, 0.125);
+    padding: 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.project-box:hover {
+    transform: translateY(-.5rem);
 }
 
 /* CONTACT */
