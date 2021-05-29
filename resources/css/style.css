@@ -11,13 +11,13 @@
 :root {
     /* --primary-color: #ff8c69; */
     --primary-color: #00afef;
-    --background-color: #282C34;
-    --text-color: #fff;
+    --background-color: #fff;
+    --text-color: #282C34;
 }
 
 .light-theme {
-    --background-color: #fff;
-    --text-color: #282C34;   
+    --background-color: #282C34;
+    --text-color: #fff;
 }
 
 html {
@@ -187,12 +187,13 @@ a {
 .animated-text {
     color: var(--primary-color);
     height: 3rem;
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: column;
     overflow: hidden;
     vertical-align: bottom;
 }
 
-.animated-text h4:nth-child(1){
+.animated-text span:nth-child(1){
     animation: textScroll 12s infinite;
     animation-delay: 2s;
 }
@@ -228,6 +229,7 @@ a {
 .icons {
     display: flex;
     list-style: none;
+    line-height: 0;
 }
 
 .icons a {
@@ -320,6 +322,7 @@ a {
     position: absolute;
     left: 0px;
     color: var(--primary-color);
+    font-weight: 500;
 }
 
 /* FEATURED PROJECTS */
