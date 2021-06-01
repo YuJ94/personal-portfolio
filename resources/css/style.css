@@ -64,7 +64,6 @@ h3 {
 h4 {
     font-size: 1.75rem;
     font-weight: 500;
-    line-height: 3rem;
 }
 
 h5 {
@@ -89,7 +88,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .navigation a {
@@ -182,20 +181,24 @@ a {
     opacity: 0;
     animation: fadeUp 0.5s forwards;
     animation-delay: 1s;
-}
-
-.animated-text {
-    color: var(--primary-color);
-    height: 3rem;
-    display: inline-flex;
-    flex-direction: column;
     overflow: hidden;
-    vertical-align: bottom;
 }
 
-.animated-text span:nth-child(1){
-    animation: textScroll 12s infinite;
-    animation-delay: 2s;
+.typed-text {
+    color: var(--primary-color);
+}
+
+.text-cursor {
+    display: inline-block;
+    background-color: var(--text-color);
+    width: 3px;
+    margin-left: 1px;
+    transition: background-color 1s;
+    animation: blink 1s infinite;
+}
+
+.text-cursor.typing {
+    animation: none;
 }
 
 .home-links {
@@ -245,24 +248,6 @@ a {
 
 /* HOME ANIMATIONS */
 
-@keyframes textScroll {
-    0% {
-        margin-top: 0;
-    }
-    25% {
-        margin-top: -3rem;
-    }
-    50% {
-        margin-top: -6rem;
-    }
-    75% {
-        margin-top: -9rem;
-    }
-    100% {
-        margin-top: -12rem;
-    }
-}
-
 @keyframes fadeUp {
     0%{
         transform: translateY(3rem);
@@ -270,6 +255,24 @@ a {
     100%{
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@keyframes blink {
+    0%{
+        background-color: var(--text-color);
+    }
+    49%{
+        background-color: var(--text-color);
+    }
+    50%{
+        background-color: transparent;
+    }
+    99%{
+        background-color: transparent;
+    }
+    100%{
+        background-color: var(--text-color);
     }
 }
 
