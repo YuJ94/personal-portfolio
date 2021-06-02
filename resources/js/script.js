@@ -30,7 +30,7 @@ toggleBtn.addEventListener('click', function() {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".text-cursor");
 
-const textArray = ["Committed", "Passionate", "Motivated", "Creative"];
+const textArray = ["Committed ", "Passionate ", "Motivated ", "Creative "];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 3000;
@@ -65,5 +65,5 @@ function erase() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if(textArray.length) setTimeout(type, newTextDelay + 500);
+    if(textArray.length) setTimeout(type, newTextDelay);
 });
