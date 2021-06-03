@@ -33,7 +33,7 @@ const cursorSpan = document.querySelector(".text-cursor");
 const textArray = ["Committed ", "Passionate ", "Motivated ", "Creative "];
 const typingDelay = 100;
 const erasingDelay = 100;
-const newTextDelay = 3000;
+const newTextDelay = 2500;
 let textArrayIndex = 0;
 let charIndex = 0;
 

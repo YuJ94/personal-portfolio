@@ -375,6 +375,11 @@ a {
     line-height: 1.75rem;
 }
 
+.project-description a {
+    color: var(--text-color);
+    transition: color 1s;
+}
+
 .project-span {
     font-size: .75rem;
     color: var(--text-color);
