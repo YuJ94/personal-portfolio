@@ -463,12 +463,6 @@ a {
     background-color: rgba(0, 0, 0, 0.125);
     padding: 1.5rem;
     border-radius: .5rem;
-    cursor: pointer;
-    transition: transform 0.5s;
-}
-
-.project-box:hover {
-    transform: translateY(-.5rem);
 }
 
 /* CONTACT */
@@ -506,4 +500,17 @@ footer a {
     color: var(--text-color);
     text-decoration: underline;
     transition: color 1s;
+}
+
+/* SCROLL REVEAL */
+
+.reveal {
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: transform 1.5s ease, opacity 1.5s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
 }

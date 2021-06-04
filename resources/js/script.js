@@ -8,21 +8,21 @@ window.addEventListener("scroll", function() {
 
 // LIGHT DARK VARIABLES
 let body = document.body;
-let toggleBtn = document.querySelector('.toggle-btn');
+let toggleBtn = document.querySelector(".toggle-btn");
 let currentTheme = localStorage.getItem('currentTheme');
 
 // LIGHT DARK FUNCTIONS
 if (currentTheme) {
-    body.classList.add('light-theme');
+    body.classList.add("light-theme");
 }
 
-toggleBtn.addEventListener('click', function() {
+toggleBtn.addEventListener("click", function() {
     body.classList.toggle('light-theme');
 
-    if (body.classList.contains('light-theme')) {
-        localStorage.setItem('currentTheme', 'themeActive');
+    if (body.classList.contains("light-theme")) {
+        localStorage.setItem("currentTheme", "themeActive");
     } else {
-        localStorage.removeItem('currentTheme');
+        localStorage.removeItem("currentTheme");
     }
 });
 
@@ -66,4 +66,20 @@ function erase() {
 
 document.addEventListener("DOMContentLoaded", function() {
     if(textArray.length) setTimeout(type, newTextDelay);
+});
+
+// SCROLL REVEAL VARIABLES
+const reveals = document.querySelectorAll(".reveal");
+
+// SCROLL REVEAL FUNCTIONS
+window.addEventListener("scroll", function() {
+    for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 50;
+    
+        if (revealTop < windowHeight - revealPoint) {
+          reveals[i].classList.add("active");
+        }       
+    }
 });
