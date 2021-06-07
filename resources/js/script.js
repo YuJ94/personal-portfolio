@@ -83,3 +83,21 @@ window.addEventListener("scroll", function() {
         }       
     }
 });
+
+// MENU ICON VARIABLES
+const menuBtn = document.querySelector(".menu-icon");
+const navLink = document.querySelector(".nav-links");
+const navItems = document.querySelectorAll(".nav-link");
+
+// MENU ICON FUNCTIONS
+menuBtn.addEventListener("click", () => {
+    menuBtn.classList.toggle("open");
+    navLink.classList.toggle("open");
+});
+
+navItems.forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+        menuBtn.classList.remove("open");
+        navLink.classList.remove("open");
+    });
+});
