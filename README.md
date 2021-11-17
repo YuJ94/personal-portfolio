@@ -15,4 +15,4 @@ Project was built with:
 - GitHub
 
 ## Status
-Project is completed.
+Project is incomplete.
