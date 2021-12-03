@@ -561,6 +561,10 @@ footer a {
     h5 {
         font-size: 1.5rem;
     }
+
+    h6 {
+        font-size: 1.25rem;
+    }
     
     /* HEADER */
     
@@ -610,6 +614,11 @@ footer a {
 
     h5 {
         font-size: 1.25rem;
+    }
+
+    h6 {
+        font-size: 1.125rem;
+        text-align: center;
     }
 
     /* NAVIGATION */
@@ -751,7 +760,7 @@ footer a {
     }
 
     .about-left {
-        width: 75%;
+        width: 100%;
         margin-bottom: 2rem;
     }
 
@@ -759,8 +768,8 @@ footer a {
         width: 100%;
     }
 
+    .about-left p,
     .about-right p {
-        margin-bottom: 1.25rem;
         line-height: initial;
     }
 
