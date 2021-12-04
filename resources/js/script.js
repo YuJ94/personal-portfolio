@@ -30,7 +30,7 @@ toggleBtn.addEventListener("click", function() {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".text-cursor");
 
-const textArray = ["Committed ", "Passionate ", "Motivated ", "Creative "];
+const textArray = ["Passionate ", "Motivated ", "Creative ", "Committed "];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 2500;
