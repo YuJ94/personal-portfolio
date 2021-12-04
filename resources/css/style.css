@@ -12,11 +12,11 @@
     /* --primary-color: #ff8c69; */
     --primary-color: #00afef;
     --background-color: #fff;
-    --text-color: #282C34;
+    --text-color: #151515;
 }
 
 .light-theme {
-    --background-color: #282C34;
+    --background-color: #151515;
     --text-color: #fff;
 }
 
