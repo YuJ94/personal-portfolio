@@ -12,11 +12,13 @@
     /* --primary-color: #ff8c69; */
     --primary-color: #00afef;
     --background-color: #fff;
+    --project-color: rgba(0, 0, 0, .1);
     --text-color: #151515;
 }
 
 .light-theme {
     --background-color: #151515;
+    --project-color: rgba(255, 255, 255, .1);
     --text-color: #fff;
 }
 
@@ -235,7 +237,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     padding: .5rem 1.5rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     transition: background-color 0.5s;
 }
@@ -402,7 +404,7 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     padding: .5rem 1.5rem;
-    border-radius: 2rem;
+    border-radius: 1.5rem;
     cursor: pointer;
     transition: background-color 0.5s;
 }
@@ -453,12 +455,12 @@ a {
 
 .additional-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(432px, 1fr));
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 2rem;
 }
 
 .project-box {
-    background-color: rgba(0, 0, 0, 0.125);
+    background-color: var(--project-color);
     padding: 1.5rem;
     border-radius: .5rem;
 }
@@ -526,7 +528,7 @@ footer a {
     /* ADDITIONAL PROJECTS */
 
     .additional-container {
-        grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));
+        grid-template-columns: 1fr 1fr;
     }
 
 }
@@ -576,12 +578,6 @@ footer a {
     
     .home {
         padding: 0 5%;
-    }
-    
-    /* ADDITIONAL PROJECTS */
-    
-    .additional-container {
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 
 }
@@ -680,7 +676,7 @@ footer a {
         width: 2rem;
         height: 2rem;
         cursor: pointer;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
         /* border: 2px solid blue; */
     }
 
@@ -690,7 +686,7 @@ footer a {
         height: 3px;
         width: 2rem;
         border-radius: 3px;
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .menu-icon__line::before,
@@ -701,7 +697,7 @@ footer a {
         width: 100%;
         border-radius: 3px;
         background-color: var(--text-color);
-        transition: all .5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
 
     .menu-icon__line::before {
