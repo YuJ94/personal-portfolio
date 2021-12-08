@@ -1,13 +1,13 @@
 # Portfolio
-First iteration of my personal website.
-
-## Screenshot
 ![preview of landing page](./resources/images/portfolio.jpg)
 
-## Visit
-Click [here](https://yuj94.github.io/portfolio/) to visit the website.
+## Description
+First iteration of my portfolio website.
 
-## Technologies
+## Visit
+To view this website live, please visit [here](https://yuj94.github.io/portfolio/).
+
+## Technologies Used
 Project was built with:
 - HTML
 - CSS
@@ -15,4 +15,4 @@ Project was built with:
 - GitHub
 
 ## Status
-Project is incomplete.
+Project is complete.
