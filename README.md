@@ -1,5 +1,5 @@
 # Portfolio
-First iteration of my portfolio website.
+My portfolio website.
 
 ## Screenshot
 ![preview of landing page](./resources/images/portfolio.jpg)
